@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>3.4.1.1.- Ejemplo. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-142" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">3.4.1.1.- Ejemplo.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id448">
+<div class="iDevice emphasis0">
+<div id="ta448_77" class="block iDevice_content">
+<p>Un ejemplo de un documento HTML en el que se utiliza este método para incluir formatos es:</p>
+<div class="pre-code">
+<div>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ejemplo del uso de clases en hojas de estilo&lt;/title&gt;
+        &lt;style type="text/css"&gt;<br />            .clase-azul{color:blue}<br />            p.clase-roja{color:#ff0000; font-style:italic; font-weight:bolder; font-family:courier;}<br />        &lt;/style&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;h3 class="clase_azul"&gt;Ejemplo del uso de clases en hojas de estilo&lt;/h3&gt;
+        &lt;p&gt;Cualquier elemento sobre el que apliquemos la clase clase_azul tendr&amp;aacute; el texto azul.&lt;/p&gt;   
+        &lt;p class="clase-azul"&gt; Incluso el p&amp;aacute;rrafo.&lt;/p&gt;
+        &lt;p class="clase-roja"&gt;Sobre el p&amp;aacute;rrafo podemos aplicar la clase clase_roja y <br />            el texto ser&amp;aacute; rojo, en negrita cursiva y la familia del texto courier.&lt;/p&gt;
+        &lt;h3 class="clase-roja"&gt; Pero este texto no aparecer&amp;aacute formateado <br />            ya que la clase clase-roja s&amp;oacute;lo act&amp;uacute;a sobre p&amp;aacute;rrafos.&lt;/h3&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<p class="elemento_centrado" style="text-align: left;">Al publicarlo, en un navegador veríamos: </p>
+<p class="elemento_centrado"><img src="LMSGI02_CONT_R20_Ejemplo19.jpg" width="835" height="389" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

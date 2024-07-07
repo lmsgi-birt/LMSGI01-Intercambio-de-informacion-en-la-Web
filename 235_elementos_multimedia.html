@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.3.5.- Elementos multimedia. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-139" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">2.3.5.- Elementos multimedia.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id443">
+<div class="iDevice emphasis0">
+<div id="ta443_154" class="block iDevice_content">
+<p>Para insertar contenido multimedia en nuestros documentos HTML usaremos las etiquetas video y audio de la siguiente manera:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!-- Reproduce un vídeo de ejemplo con los controles de reproducción --&gt;<br />&lt;video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls&gt;<br />   Tu navegador no implementa el elemento &lt;code&gt;video&lt;/code&gt;.<br />&lt;/video&gt;<br /><br /></pre>
+<pre>&lt;!--  insertar audio en tu documento HTML --&gt;</pre>
+<pre>&lt;audio src="/test/audio.ogg" controls autoplay loop&gt;<br /> &lt;p&gt;Tu navegador no implementa el elemento audio.&lt;/p&gt;<br />&lt;/audio&gt;</pre>
+</div>
+</div>
+<p>El <strong>atributo src</strong> puede ser una <strong>URL del archivo de audio o la ruta al archivo en el sistema local</strong>. Además, puede usar atributos como:</p>
+<ul>
+<li><strong>controls</strong>: muestra los controles estándar de HTML5.</li>
+<li><strong>autoplay</strong>: hace que el contenido se reproduzca automáticamente.</li>
+<li><strong>loop</strong>: hace que el audio se repita automáticamente.</li>
+<li><strong>preload</strong>: es usado para almacenar temporalmente (buffering) archivos de gran tamaño. Puede tomar los valores "none" (no almacena temporalmente el archivo), "auto" (almacena temporalmente el archivo multimedia) o "metadata" (almacena temporalmente sólo los metadatos del archivo).</li>
+</ul>
+<p>La etiqueta &lt;video&gt; puede hacer uso  de la etiqueta <strong>&lt;source&gt;</strong> en su interior con el propósito de suministrar vídeos en formatos alternativos, lo que resulta una mayor adaptabilidad a navegadores obsoletos. De este modo, los navegadores que admiten los nuevos formatos podrán hacer uso de estos recursos, mientras que aquellos que no lo hagan recurrirán a los formatos más antiguos o a las etiquetas de respaldo.</p>
+<p>Los tipos de formato utilizados se denominan codec, el codec es un tipo de fichero que permite comprimir y descomprimir video digital. Los formatos o codec soportado por HTML5, se pueden encontrar en el siguiente <a href="https://www.w3schools.com/tags/tag_video.asp">enlace</a>. En el apartado de "Definition and Usage" se visualiza la compatibilidad con los navegadores más comunes.</p>
+<div class="pre-code">
+<div>
+<pre><code>&lt;video width="640" height="480"&gt;
+  &lt;source src="video.mp4" type="video/mp4" /&gt;
+  &lt;source src="video.webm" type="video/webm" /&gt;
+  &lt;source src="video.ogv" type="video/ogg" /&gt;
+  &lt;img src="imagennovideo.png" alt="No soporta el vídeo" /&gt;
+  Su navegador no es compatible con los videos elegidos
+&lt;/video&gt;</code></pre>
+</div>
+</div>
+<p>A continuación se muestra, la interpretación que realiza el código al abrirlo con el navegador.</p>
+<ol>
+<li>Intenta reproducir el primer formato: <code>MP4</code>. Si el navegador no reconoce el codec o no encuentra el fichero saltará a la siguiente etiqueta source,.</li>
+<li>Intenta reproducir el segundo formato: <code>WEBM</code>. Si el navegador no reconoce el codec o no encuentra el fichero saltará a la siguiente etiqueta source,.</li>
+<li>Intenta reproducir el tercer formato: <code>OGV</code>. Si el navegador no reconoce el codec o no encuentra el fichero saltará a la siguiente etiqueta source,.</li>
+<li>Si todas las reproducciones anteriores han fallado, intentará mostrar una imagen.</li>
+<li>Si se trata de un navegador de terminal de texto (<span>o sin capacidades gráficas</span>), mostrará el texto del final.</li>
+</ol>
+<p>Fuentes:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content" target="_blank">Video and audio content</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

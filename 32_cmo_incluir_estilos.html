@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>3.2.- Cómo incluir estilos. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-44" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">3.2.- Cómo incluir estilos.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id328">
+<div class="iDevice emphasis0">
+<div id="ta328_77" class="block iDevice_content">
+<p><img src="LMSGI03_CONT_RO1_02.jpg" class="elemento_derecha" alt="CSS" title="CSS" width="250" height="172" />Existen tres opciones para incluir estilos en una página web:</p>
+<p><strong>1.- Incluir estilos en los elementos HTML</strong></p>
+<p>En esta opción se aplica un estilo único a una sola etiqueta o elemento HTML y para ello, se usa el atributo "style".</p>
+<p>Este método es el menos utilizado, ya que para modificar un formato hay que cambiar todos los elementos que estén asociados a él. Solamente se utiliza en determinadas situaciones en las que se debe incluir un estilo muy específico para un solo elemento concreto.</p>
+<p><strong>2.- Incluir estilos en el documento HTML</strong></p>
+<p>Este métido se usa para definir un estilo para una sola página HTML y se define en la sección &lt;head&gt; con la etiqueta &lt;style&gt;.</p>
+<p>Este método se emplea cuando se definen pocos estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos globales de todas las páginas del sitio web. Tiene el inconveniente de que para modificar los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a cambiar.</p>
+<p><strong>3.- Definir estilos en un archivo externo</strong></p>
+<p>En este caso, todos los estilos CSS se incluyen en uno, o varios, archivos de texto plano, cuya extensión es .css. Las páginas HTML enlazan dentro de su cabecera dicho fichero.</p>
+<p>Puesto que una página web puede tener asociados varios ficheros CSS es recomendable agrupar estos últimos en un directorio. El navegador descarga los archivos CSS externos, además de la página web asociada a ellos, y aplica los estilos a los contenidos de la página antes de mostrar sus contenidos.</p>
+<p>Esta es la forma de incluir CSS en las páginas HTML más utilizada. La principal ventaja es que se puede incluir un mismo archivo CSS en multitud de páginas HTML, por lo que se garantiza la aplicación homogénea de los mismos estilos a todas las páginas que forman un sitio web. Además, el mantenimiento del sitio web se simplifica al máximo, ya que el cambio en un solo archivo CSS permite variar de forma instantánea los estilos de todas las páginas HTML asociadas.<br /><br /><br /></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EleccionmultiplefpdIdevice em_iDevice" id="id332">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Autoevaluación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-332_63" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion332_63" class="block question iDevice_content">
+El mejor modo de aplicar formatos a una página web es:
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i332_66" class="sr-av"><a href="#answer-332_66">Opción 1</a></label><input type="radio" name="option332_63" id="i332_66" class="exe-radio-option exe-radio-option-0-4-332_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-332_66"><a name="answer-332_66"></a>
+<div id="taans332_66" class="block iDevice_content">
+Definiendo los formatos directamente a través de los atributos de los elementos HTML.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i332_187" class="sr-av"><a href="#answer-332_187">Opción 2</a></label><input type="radio" name="option332_63" id="i332_187" class="exe-radio-option exe-radio-option-1-4-332_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-332_187"><a name="answer-332_187"></a>
+<div id="taans332_187" class="block iDevice_content">
+Incluyendo el formato CSS en los elementos de HTML.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i332_190" class="sr-av"><a href="#answer-332_190">Opción 3</a></label><input type="radio" name="option332_63" id="i332_190" class="exe-radio-option exe-radio-option-2-4-332_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-332_190"><a name="answer-332_190"></a>
+<div id="taans332_190" class="block iDevice_content">
+Definiendo los estilos en la cabecera del documento HTML.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i332_193" class="sr-av"><a href="#answer-332_193">Opción 4</a></label><input type="radio" name="option332_63" id="i332_193" class="exe-radio-option exe-radio-option-3-4-332_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-332_193"><a name="answer-332_193"></a>
+<div id="taans332_193" class="block iDevice_content">
+Definiendo un fichero CSS externo. 
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b332_63" class="feedback js-hidden"><a name="sa0b332_63"></a>
+<div id="taf332_66" class=" iDevice_content">
+No es la opción correcta.
+
+</div>
+</div>
+<div id="sa1b332_63" class="feedback js-hidden"><a name="sa1b332_63"></a>
+<div id="taf332_187" class=" iDevice_content">
+No es correcto.
+
+</div>
+</div>
+<div id="sa2b332_63" class="feedback js-hidden"><a name="sa2b332_63"></a>
+<div id="taf332_190" class=" iDevice_content">
+Incorrecto.
+
+</div>
+</div>
+<div id="sa3b332_63" class="feedback js-hidden"><a name="sa3b332_63"></a>
+<div id="taf332_193" class=" iDevice_content">
+Correcto.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-332_66">Incorrecto</a><span> (<a href="#sa0b332_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-332_187">Incorrecto</a><span> (<a href="#sa1b332_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-332_190">Incorrecto</a><span> (<a href="#sa2b332_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-332_193">Opción correcta</a><span> (<a href="#sa3b332_63">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>3.3.4.1.- Propiedades. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-122" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">3.3.4.1.- Propiedades.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id422">
+<div class="iDevice emphasis0">
+<div id="ta422_154" class="block iDevice_content">
+<p>Ahora vamos a ver las propiedades que utilizaremos en el modelo de caja:</p>
+<table class="tabla">
+<tbody>
+<tr><th scope="col"><strong>Elemento</strong></th><th scope="col"><strong>Descripción</strong></th><th scope="col"><strong>Ejemplo</strong></th></tr>
+<tr>
+<td style="width: 130px;">margin-left</td>
+<td><strong>Indica el tamaño del margen izquierdo</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+<td rowspan="4" style="width: 220px;">
+<div class="pre-code">
+<div>
+<pre><code>p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>margin-right</td>
+<td><strong>Indica el tamaño del margen derecho</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>margin-top</td>
+<td><strong>Indica el tamaño del margen superior</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>margin-bottom</td>
+<td><strong>Indica el tamaño del margen inferior</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>margin</td>
+<td><strong>Permite establecer los márgenes de una vez</strong>. Hay que seguir el orden: superior, derecho, inferior e izquierdo.</td>
+<td style="width: 220px;">
+<div class="pre-code">
+<div>
+<pre><code>p {
+    margin: 25px 50px 75px 100px;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="3"><span></span></td>
+</tr>
+<tr>
+<td>padding-left</td>
+<td><strong>Indica el espacio izquierdo entre el borde y el contenido</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+<td rowspan="4" style="width: 220px;">
+<div class="pre-code">
+<div>
+<pre><code>div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>padding -right</td>
+<td><strong>Indica el espacio derecho entre el borde y el contenido</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>padding -top</td>
+<td><strong>Indica el espacio superior entre el borde y el contenido</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>padding -bottom</td>
+<td><strong>Indica el espacio inferior entre el borde y el contenido</strong>. Puede usarse una longitud, en unidades CSS, o un porcentaje.</td>
+</tr>
+<tr>
+<td>padding</td>
+<td><strong>Establece el espacio entre los bordes y el contenido de una sola vez</strong>. Hay que respetar el orden superior, derecho, inferior e izquierdo.</td>
+<td style="width: 220px;">
+<div class="pre-code">
+<div>
+<pre><code>div {
+    padding: 25px 50px 75px 100px;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p></p>
+</td>
+</tr>
+<tr>
+<td>border-left-color</td>
+<td><strong>Establece el color del borde izquierdo del elemento</strong>. Su valor es un color RGB o el nombre del color.</td>
+<td rowspan="4" style="width: 220px;">
+<div class="pre-code">
+<div>
+<pre><code>p {
+    border-style: solid;
+    border-right-color: #ff0000;
+
+}</code></pre>
+</div>
+</div>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>border-right-color</td>
+<td><strong>Establece el color del borde derecho del elemento</strong>. Su valor es un color RGB o el nombre del color.</td>
+</tr>
+<tr>
+<td>border-top-color</td>
+<td><strong>Establece el color del borde superior del elemento</strong>. Su valor es un color RGB o el nombre del color.</td>
+</tr>
+<tr>
+<td>border-bottom-color</td>
+<td><strong>Establece el color del borde inferior del elemento</strong>. Su valor es un color RGB o el nombre del color.</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td><strong>Establece el color de los bordes del elemento de una sola vez</strong>. Hay que seguir el orden superior, derecho, inferior e izquierdo. Su valor es un color RGB o el nombre del color.</td>
+<td>
+<div class="pre-code">
+<div>
+<pre><code>p {
+    border-style: solid;
+    border-color: red green blue yellow;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>border-style</td>
+<td><strong>Establece el estilo del borde</strong>, los valores significan: none=ningun borde, dotted=punteado (no funciona siempre), solid=solido, double=doble borde, los valores groove, ridge, inset y outset son bordes con varios efectos 3D.</td>
+<td>
+<div class="pre-code">
+<div>
+<pre><code>p {border-style: dotted;}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>border-width</td>
+<td><strong>Establece el tamaño de los bordes del elemento al que lo aplicamos</strong>. Hay que seguir el orden superior, derecho, inferior, izquierdo.</td>
+<td>
+<div class="pre-code">
+<div>
+<pre><code>p {
+    border-style: solid;
+    border-width: 5px;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}</code></pre>
+</div>
+</div>
+<p></p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><span></span></td>
+</tr>
+<tr>
+<td>width</td>
+<td><strong>Establece el ancho del contenido del elemento</strong>. El valor es un porcentaje o un tamaño.</td>
+<td rowspan="2">
+<div class="pre-code">
+<div>
+<pre><code>div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>height</td>
+<td><strong>Establece la altura del contenido del elemento</strong>. El valor es un porcentaje o un tamaño.</td>
+</tr>
+</tbody>
+</table>
+<p> Para que practiques todo lo aprendido te recomiendo que intentes hacer el ejercicio que se propone a continuación, antes de ver su solución. ¡Ánimo!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

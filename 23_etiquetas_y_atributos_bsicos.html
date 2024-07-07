@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.3.- Etiquetas y atributos básicos. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-25" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">2.3.- Etiquetas y atributos básicos.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id224">
+<div class="iDevice emphasis0">
+<div id="ta224_77" class="block iDevice_content">
+<p><img class="elemento_derecha" src="LMSGI02_CONT_R01_Identificacion.jpg" width="350" height="232" />Un documento HTML está formado por etiquetas y atributos.</p>
+<p>Al igual que en XML las etiquetas pueden ser de apertura, &lt;etiqueta&gt;, o de cierre, &lt;/etiqueta&gt; y definen los diferentes elementos con los que podemos trabajar. Una de las diferencias con XML es que la cantidad de etiquetas de HTML está limitada a aquellas que están definidas por el lenguaje.</p>
+<p>La definición completa de ciertos elementos, como las imágenes y los enlaces, requiere información adicional que se añade a las etiquetas mediante los <strong>atributos</strong>.</p>
+<p>En general sus características son:</p>
+<ul>
+<li><span>Todos los elementos HTML pueden tener </span><b><span>atributos</span></b></li>
+<li><span>Los atributos proporcionan </span><b><span>información adicional</span></b><span> sobre un elemento</span></li>
+<li><span>Los atributos siempre se especifican en </span><b><span>la etiqueta de inicio</span></b></li>
+<li><span>Los atributos normalmente vienen en pares nombre/valor como: </span><b><span>name = "value"</span></b></li>
+<li>Para cada uno de los atributos hay definido un conjunto de valores que se le puede asignar. Si el valor de un atributo no es válido, el navegador lo ignora.</li>
+<li>Cada una de las etiquetas HTML define los atributos que puede utilizar, aunque algunos de ellos son comunes a muchas etiquetas.</li>
+</ul>
+<p>Por ejemplo, el idioma del documento se puede declarar en la etiqueta <strong>&lt;html&gt;</strong> utilizando el atributo <strong>lang</strong>.  La declaración de un idioma es importante para las aplicaciones de accesibilidad (lectores de pantalla) y los motores de búsqueda:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+...
+&lt;/html&gt;<em ffffff="" color:="" 4a4a4a="" font-family:="" open="" sans="" sans-serif=""> </em></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EleccionmultiplefpdIdevice em_iDevice" id="id225">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Autoevaluación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-225_63" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion225_63" class="block question iDevice_content">
+Las etiquetas de HTML, al igual que las de XML, son ilimitadas:
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i225_66" class="sr-av"><a href="#answer-225_66">Opción 1</a></label><input type="radio" name="option225_63" id="i225_66" class="exe-radio-option exe-radio-option-0-2-225_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-225_66"><a name="answer-225_66"></a>
+<div id="taans225_66" class="block iDevice_content">
+Verdadero.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i225_90" class="sr-av"><a href="#answer-225_90">Opción 2</a></label><input type="radio" name="option225_63" id="i225_90" class="exe-radio-option exe-radio-option-1-2-225_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-225_90"><a name="answer-225_90"></a>
+<div id="taans225_90" class="block iDevice_content">
+Falso.
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b225_63" class="feedback js-hidden"><a name="sa0b225_63"></a>
+<div id="taf225_66" class=" iDevice_content">
+No es correcto.
+
+</div>
+</div>
+<div id="sa1b225_63" class="feedback js-hidden"><a name="sa1b225_63"></a>
+<div id="taf225_90" class=" iDevice_content">
+Correcto.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-225_66">Incorrecto</a><span> (<a href="#sa0b225_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-225_90">Opción correcta</a><span> (<a href="#sa1b225_63">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EleccionmultiplefpdIdevice em_iDevice" id="id226">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Autoevaluación</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-226_63" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion226_63" class="block question iDevice_content">
+ <b>Todos los elementos de HTML están formados por:</b> 
+
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i226_66" class="sr-av"><a href="#answer-226_66">Opción 1</a></label><input type="radio" name="option226_63" id="i226_66" class="exe-radio-option exe-radio-option-0-4-226_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-226_66"><a name="answer-226_66"></a>
+<div id="taans226_66" class="block iDevice_content">
+Etiquetas de apertura y cierre.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i226_150" class="sr-av"><a href="#answer-226_150">Opción 2</a></label><input type="radio" name="option226_63" id="i226_150" class="exe-radio-option exe-radio-option-1-4-226_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-226_150"><a name="answer-226_150"></a>
+<div id="taans226_150" class="block iDevice_content">
+Etiquetas de apertura y cierre, un solo atributo y su valor correspondiente.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i226_153" class="sr-av"><a href="#answer-226_153">Opción 3</a></label><input type="radio" name="option226_63" id="i226_153" class="exe-radio-option exe-radio-option-2-4-226_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-226_153"><a name="answer-226_153"></a>
+<div id="taans226_153" class="block iDevice_content">
+Etiquetas de apertura, cierre, varios atributos y sus valores.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i226_156" class="sr-av"><a href="#answer-226_156">Opción 4</a></label><input type="radio" name="option226_63" id="i226_156" class="exe-radio-option exe-radio-option-3-4-226_63-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-226_156"><a name="answer-226_156"></a>
+<div id="taans226_156" class="block iDevice_content">
+Etiquetas de apertura, cierre, ninguno o varios atributos y sus valores.
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b226_63" class="feedback js-hidden"><a name="sa0b226_63"></a>
+<div id="taf226_66" class=" iDevice_content">
+No es la opción correcta.
+
+</div>
+</div>
+<div id="sa1b226_63" class="feedback js-hidden"><a name="sa1b226_63"></a>
+<div id="taf226_150" class=" iDevice_content">
+No es correcto.
+
+</div>
+</div>
+<div id="sa2b226_63" class="feedback js-hidden"><a name="sa2b226_63"></a>
+<div id="taf226_153" class=" iDevice_content">
+Incorrecto.
+
+</div>
+</div>
+<div id="sa3b226_63" class="feedback js-hidden"><a name="sa3b226_63"></a>
+<div id="taf226_156" class=" iDevice_content">
+Correcto.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-226_66">Incorrecto</a><span> (<a href="#sa0b226_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-226_150">Incorrecto</a><span> (<a href="#sa1b226_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-226_153">Incorrecto</a><span> (<a href="#sa2b226_63">Retroalimentación</a>)</span></li>
+<li><a href="#answer-226_156">Opción correcta</a><span> (<a href="#sa3b226_63">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

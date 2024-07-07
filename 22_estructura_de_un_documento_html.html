@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.2.- Estructura de un documento HTML. |  LMSGI01.- Intercambio de información en la Web. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.2 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+<script type="text/javascript" src="//cdn1.readspeaker.com/script/11806/webReader/webReader.js?pids=wr"></script>
+<script type="text/javascript">
+window.rsConf = {general: {usePost: true}};
+</script>
+
+<script type="text/javascript">
+window.onload = function() {
+var player = document.createElement("div");
+player.id = "readspeaker_button1";
+player.className = "rs_skip rsbtn rs_preserve";
+player.innerHTML = '<a class="rsbtn_play" accesskey="L" title="Escuchar esta p&aacute;gina utilizando ReadSpeaker"' +
+'href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid=11806&amp;lang=es_es&amp;readid=main&amp;url=">' +
+'<span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Escuchar</span></span></span><span class="rsbtn_right rsimg rsplay rspart"></span>' +
+'</a>';
+
+var accordions = document.getElementsByClassName("fx-accordion-title");
+
+for (i = 0; i < accordions.length; i++) {
+accordions[i].className += " rs_preserve";
+}
+
+var paginations = document.getElementsByClassName("fx-pagination");
+
+for (i = 0; i < paginations.length; i++) {
+paginations[i].className += " rs_preserve rs_skip";
+}
+
+var main = document.getElementById("main");
+
+main.insertBefore(player, main.firstChild);
+
+ReadSpeaker.init();
+
+ReadSpeaker.q(function() {
+rspkr.ui.addClickEvents();
+});
+};
+</script>
+<style>
+#main .rsbtn ul li {
+list-style-image: none;
+}
+
+</style></head>
+<body id="exe-node-112" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">2.2.- Estructura de un documento HTML.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id391">
+<div class="iDevice emphasis0">
+<div id="ta391_154" class="block iDevice_content">
+<p>Generalmente, la estructura de una página web en HTML5 suele seguir un patrón similar.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!DOCTYPE html&gt;<br />&lt;html  lang="es"&gt;<br />&lt;head&gt;<br />    &lt;meta charset="utf-8"&gt;<br />    &lt;meta name="description" content="Ejemplo de HTML5"&gt;<br />    &lt;meta name="keywords" content="HTML5, CSS3, JavaScript"&gt;<br />    &lt;title&gt;Primera Página HTML5&lt;/title&gt;<br />&lt;/ head&gt;<br />&lt;body&gt;<br />    &lt;h1&gt;Esto es HTML5&lt;/h1&gt;<br />    &lt;p&gt;Aquí vemos el contenido de la página web.&lt;/p&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;
+</pre>
+</div>
+</div>
+<p>Aunque en la especificación HTML5 se ha hecho un gran esfuerzo para relajar la sintaxis y por ello, las etiquetas &lt;html&gt;, &lt;head&gt;y &lt;body&gt; no son obligatorias, es del todo recomendable que estén.</p>
+<p>Veamos algunos de los apartados que se pueden definir en una página web:</p>
+<p>1. El <strong>tipo de documento</strong>: la primera línea de un documento HTML se corresponde con la declaración del tipo de documento, el doctype, y sirve para indicar también qué versión de HTML se ha utilizado, de manera que el navegador pueda interpretarlo correctamente.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!-- Declaración del doctype en HTML5 --&gt;<br />&lt;! DOCTYPE html&gt;<br /><br />&lt;!-- Declaración del doctype en HTML4.01 transicional --&gt;<br />&lt;! DOCTYPE HTML PUBLIC "- // W3C // DTD HTML 4.01 Transitional // EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;<br /><br />&lt;!-- Declaración del doctype en XHTML 1.0 estricto --&gt;<br />&lt;! DOCTYPE html PUBLIC "- // W3C // DTD XHTML 1.0 Strict // EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</pre>
+</div>
+</div>
+<p>2. El <strong>documento HTML</strong>: el elemento html indica el principio del contenido de la página HTML y se indica también el lenguaje utilizado.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!-- Sintaxis en HTML5. --&gt;<br />&lt;html lang="es"&gt;
+</pre>
+</div>
+</div>
+<p>3. A continuación, como se puede apreciar en el ejemplo anterior, el documento se diferencia en dos <strong>bloques: head y body</strong>.</p>
+<ul>
+<li>En el head está la información adicional de la página web, como puede ser el título que se visualiza en la pestaña del navegador a través del elemento &lt;title&gt; o los elementos &lt;meta&gt;.</li>
+<li>En el body por su parte, está el contenido que se visualiza de la página web, el cual puede estar formado por multitud de elementos html que estructuran el documento.</li>
+</ul>
+<p>4. La <strong>codificación de caracteres</strong>: suele indicar qué codificación de caracteres se ha utilizado en una página web. Habitualmente será UTF-8.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;!-- Sintaxis en HTML5 --&gt;<br />&lt;meta charset="utf-8"&gt;
+</pre>
+</div>
+</div>
+<p>5. Se puede agregar <strong>otras etiquetas &lt;meta&gt; como description o keywords</strong> para definir otros aspectos de la página web como por ejemplo:</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre>&lt;meta name="description” content=”Ejemplo de HTML5”&gt; <br />&lt;meta name="keywords" content=”HTML5, CSS3, Javascript”&gt;
+</pre>
+</div>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice" id="id83">
+<div class="iDevice emphasis_debesconocerfpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Debes conocer</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta83_129" class="block iDevice_content">
+<p>Recuerda que los comentarios de HTML5 se ponen entre los caracteres &lt;!-- y --&gt;.</p>
+<div class="codigo elemento_centrado">
+<div class="texto_izquierda">
+<pre><code>&lt;!-- En la siguiente línea definimos un párrafo --&gt;</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+</body></html>

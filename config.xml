@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<theme >
+    <name>ULHI</name>
+    <version>2.0</version>
+    <compatibility>2.0+</compatibility>
+    <author>ULHI</author>
+    <author-url>http://www.ulhi.net</author-url>
+	<license>Creative Commons by</license>
+	<license-url>http://creativecommons.org/licenses/by/3.0/</license-url>
+	<description>Plantilla creada para ULHI (Instituto de Formación Profesional a Distancia). Diseño original de Christian González Romero: http://www.christiangr.com</description>
+    <extra-head><![CDATA[<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript">
+var path = "my_js.js";
+if(document.domain=="ikastaroak.ulhi.net" || document.domain=="ikastaroakpre.ulhi.net") path = "https://ikastaroak.ulhi.net/edu/style/ULHI20/my_js.js";
+document.write(unescape("%3Cscript src=\'"+path+"\'type=\'text/javascript\'%3E%3C/script%3E"));
+</script>        
+]]></extra-head>
+    <extra-body><![CDATA[<script type="text/javascript" src="venobox.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.venobox').venobox(); 
+	});</script>
+]]></extra-body>
+    <langs lang="en">
+		<description>This theme was originally created for ULHI (Online Vocational Training Center). Original design by Christian González Romero: http://www.christiangr.com</description>
+	</langs>
+</theme>
